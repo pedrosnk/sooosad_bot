@@ -11,7 +11,6 @@ Telegram::Bot::Client.run(token) do |bot|
     case message.text
     when '/sooosad'
       bot.api.send_message(chat_id: message.chat.id, text: sooo_sad_gif)
-      exit
     end
   end
 end
